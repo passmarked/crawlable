@@ -1,0 +1,10 @@
+p Directory #<strong>#{locals.dirid}</strong>
+
+ul
+  each page in locals.pages
+    -if(page.dir == locals.dirid)
+      li
+        a(href="/p/" + (page.index+1)) Page #{page.index+1}
+  
+hr
+include nav

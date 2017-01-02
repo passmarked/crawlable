@@ -1,0 +1,9 @@
+hr
+
+ul
+  li
+    a(href="/") Home
+  - for (var i = 0; i < locals.dirs; i++) {
+    li
+      a(href="/d/" + (i+1) ) Directory ##{i+1}
+  - }

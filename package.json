@@ -1,0 +1,46 @@
+{
+  "name": "@passmarked/crawlable",
+  "version": "1.0.0",
+  "homepage": "https://passmarked.com",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=0.12"
+  },
+  "bin": {
+    "passmarked_crawlable": "index"
+  },
+  "description": "Fake server that produces the specified amount of pages in directories to test web crawlers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passmarked/crawlable/"
+  },
+  "bugs": {
+    "url": "https://github.com/passmarked/crawlable/issues",
+    "email": "support@passmarked.com"
+  },
+  "author": "Passmarked <info@passmarked.com>",
+  "keywords": [
+    "passmarked",
+    "performance",
+    "pagespeed",
+    "security",
+    "compatibility",
+    "standards",
+    "crawlable",
+    "fake",
+    "emulate",
+    "directory",
+    "browse"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "command-line-args": "^3.0.5",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
