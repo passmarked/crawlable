@@ -1,6 +1,6 @@
 {
   "name": "@passmarked/crawlable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://passmarked.com",
   "preferGlobal": true,
   "engines": {
