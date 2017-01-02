@@ -24,7 +24,7 @@ const args                  = commandLineArgs(optionDefinitions);
 **/
 const AMOUNT_RESERVED       = 1;
 const AMOUNT_OF_PAGES       = parseInt(args.count || process.env.PAGES || 100) || 100;
-const AMOUNT_OF_DIRS        = Math.round(AMOUNT_OF_PAGES / 500);
+const AMOUNT_OF_DIRS        = Math.round(AMOUNT_OF_PAGES / 500) || 1;
 const DELTA_PAGES           = AMOUNT_OF_PAGES - AMOUNT_RESERVED - AMOUNT_OF_DIRS;
 
 /**
@@ -59,6 +59,7 @@ const PORT                = parseInt(args.port || process.env.PORT || 8080)
 * Setup express with pug to render templates
 **/
 var app = express();
+app.set('views', __dirname + '/views');
 app.set('view engine', 'pug')
 
 /**
